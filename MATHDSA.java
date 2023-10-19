@@ -112,4 +112,9 @@ class Main{
 //                System.out.println(result);
 //                System.out.println(finalresult);
     }
+
+    //Divisibility of 12
+     public static void check12(String s12){
+
+     }
 }
