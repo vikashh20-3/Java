@@ -14,6 +14,7 @@ class Main{
              String value= "232";
              String str2="23244444443";
              String str9="9";
+             String str11="528";
 
 
         if(Check(value))
@@ -22,6 +23,7 @@ class Main{
            System.out.println("No");
         check4(str2);
         check9(str9);
+        check11(str11);
     }
 
 
@@ -48,9 +50,9 @@ class Main{
         int second_last=str2.charAt(n-2)-'0';
 
         if((second_last*10+last)%4==0){
-            System.out.println("Divisible by 4");
+            System.out.println(str2+"Divisible by 4");
         }else{
-            System.out.println("Not Divisible by 4");
+            System.out.println(str2+"Not Divisible by 4");
         }
 
     }
@@ -59,6 +61,9 @@ class Main{
 
 //    public static check7(String str7){
 //
+
+
+
 //    }
     //Divisibility of 9
 
@@ -74,16 +79,37 @@ class Main{
                 digitsum+=str9.charAt(i)-'0';
             };
             if(digitsum % 9==0){
-                System.out.println("Divisible by 9");
+                System.out.println(str9+"Divisible by 9");
             }else{
-                System.out.println("Not Divisible by 9");
+                System.out.println(str9+"Not Divisible by 9");
             }
-            System.out.println(digitsum);
+
 
     }
 
     //Divisibility of 11
     public  static void check11(String str11){
+                int n = str11.length();
+                int oddDigitSum=0;
+                int evenDigitSum=0;
+                for (int i =0;i<n;i++){
+                    if(i%2==0){
+                        evenDigitSum+=str11.charAt(i)-'0';
 
+                    }else {
+                        oddDigitSum += str11.charAt(i) - '0';
+                    }
+                }
+                int result = evenDigitSum-oddDigitSum;
+                boolean finalresult= result % 11==0;
+                if(finalresult){
+                    System.out.println( str11 +" Divisible by 11");
+                }else{
+                    System.out.println(str11 +"Not Divisible by 11");
+                }
+
+
+//                System.out.println(result);
+//                System.out.println(finalresult);
     }
 }
