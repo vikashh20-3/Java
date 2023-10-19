@@ -58,4 +58,9 @@ class Main{
     public static check7(String str7){
 
     }
+    //Divisibility of 9
+
+    public static check9(String str7){
+
+    }
 }
