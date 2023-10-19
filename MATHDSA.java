@@ -19,4 +19,7 @@ class Main{
         else
             System.out.println("No");
     }
+
+
+    //divisibility of four
 }
