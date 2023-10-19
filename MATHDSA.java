@@ -12,14 +12,27 @@ class Main{
         }
     public static void main(String[] args){
              String value= "232";
+             String str2="";
 
 
         if(Check(value))
             System.out.println("Yes");
         else
-            System.out.println("No");
+           System.out.println("No");
+        check4(str2);
     }
 
 
     //divisibility of four
+
+
+    public static void check4(String str2 ){
+
+         int n= str2.length();
+
+         if(n==0){
+             System.out.println("Not Divisible from 4");
+         }
+
+    }
 }
