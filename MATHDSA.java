@@ -15,6 +15,7 @@ class Main{
              String str2="23244444443";
              String str9="9";
              String str11="528";
+             String str12="25";
 
 
         if(Check(value))
@@ -24,6 +25,7 @@ class Main{
         check4(str2);
         check9(str9);
         check11(str11);
+        check12(str12);
     }
 
 
@@ -115,6 +117,28 @@ class Main{
 
     //Divisibility of 12
      public static void check12(String s12){
+            int n = s12.length();
+            int totalsum=0;
+            int lastDigit=s12.charAt(n-1)-'0';
+            System.out.println(lastDigit);
+
+            int secondLastDigit =s12.charAt(n-2)-'0';
+         System.out.println(secondLastDigit);
+
+         for (int i=0;i<n;i++){
+             totalsum+=s12.charAt(i)-'0';
+         };
+
+
+         boolean result = (totalsum % 3 == 0) && ((secondLastDigit * 10 + lastDigit) % 4 == 0);
+         if (result) {
+             System.out.println("Divisible by 12");
+         }else{
+             System.out.println("Not Divisible by 12");
+         }
+
+
+
 
      }
 }
