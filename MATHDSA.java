@@ -12,7 +12,7 @@ class Main{
         }
     public static void main(String[] args){
              String value= "232";
-             String str2="";
+             String str2="23244444443";
 
 
         if(Check(value))
@@ -33,6 +33,23 @@ class Main{
          if(n==0){
              System.out.println("Not Divisible from 4");
          }
+         if (n==1){
+             if((str2.charAt(0)-'0')%4==0){
+                 System.out.println("Divisible by 4");
+             }
+             else{
+                 System.out.println("Not Divisible by 4");
+             }
+         }
+
+         int last=str2.charAt(n-1)-'0';
+        int second_last=str2.charAt(n-2)-'0';
+
+        if((second_last*10+last)%4==0){
+            System.out.println("Divisible by 4");
+        }else{
+            System.out.println("Not Divisible by 4");
+        }
 
     }
 }
