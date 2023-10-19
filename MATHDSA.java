@@ -81,4 +81,9 @@ class Main{
             System.out.println(digitsum);
 
     }
+
+    //Divisibility of 11
+    public  static void check11(String str11){
+
+    }
 }
