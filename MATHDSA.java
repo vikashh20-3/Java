@@ -52,4 +52,10 @@ class Main{
         }
 
     }
+
+    //Divisibility of 7
+
+    public static check7(String str7){
+
+    }
 }
