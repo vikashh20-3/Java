@@ -13,6 +13,7 @@ class Main{
     public static void main(String[] args){
              String value= "232";
              String str2="23244444443";
+             String str9="9";
 
 
         if(Check(value))
@@ -20,6 +21,7 @@ class Main{
         else
            System.out.println("No");
         check4(str2);
+        check9(str9);
     }
 
 
@@ -55,12 +57,28 @@ class Main{
 
     //Divisibility of 7
 
-    public static check7(String str7){
-
-    }
+//    public static check7(String str7){
+//
+//    }
     //Divisibility of 9
 
-    public static check9(String str7){
+    public static void check9(String str9){
+            int n =str9.length();
+
+            if(n==0){
+                System.out.println("Not divisible by 9");
+            }
+
+            int digitsum=0;
+            for(int i=0;i<n;i++){
+                digitsum+=str9.charAt(i)-'0';
+            };
+            if(digitsum % 9==0){
+                System.out.println("Divisible by 9");
+            }else{
+                System.out.println("Not Divisible by 9");
+            }
+            System.out.println(digitsum);
 
     }
 }
