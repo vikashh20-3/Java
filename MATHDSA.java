@@ -111,8 +111,7 @@ class Main{
                 }
 
 
-//                System.out.println(result);
-//                System.out.println(finalresult);
+
     }
 
     //Divisibility of 12
